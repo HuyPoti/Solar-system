@@ -1,1 +1,2 @@
-<h1 style="text-align: center">Solar System<h1></h1>
+                                                                                                  Solar System
+Mô tả cách hệ mặt trời hoạt động (basic)
