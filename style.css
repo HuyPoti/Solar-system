@@ -1,0 +1,168 @@
+/* .box {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  padding: 20px;
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+  animation: move_box 3s linear 1s infinite alternate-reverse backwards;
+}
+
+@keyframes move_box {
+  from {
+    translate: 0 100px;
+    rotate: 100deg;
+  }
+  to {
+    translate: 200px 100px;
+    rotate: 360deg;
+  }
+} */
+
+/* ===================== */
+/* button {
+  outline: 0;
+  border: 0;
+}
+
+.box {
+  display: flex;
+  margin: 20px;
+  padding: 20px 50px;
+  border-radius: 30px;
+  background-color: purple;
+  color: yellow;
+  transition: all 0.3s linear;
+  overflow: hidden;
+}
+
+.box-1:hover {
+  translate: 0px -10px;
+}
+
+.box-2:hover {
+  background-color: orange;
+}
+
+.box-3 {
+  position: relative;
+}
+
+.box span {
+  z-index: 1;
+}
+
+.box-3::after {
+  position: absolute;
+  width: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  content: "";
+  background-color: orangered;
+  transition: all 0.5s linear;
+}
+.box-3:hover::after {
+  width: 100%;
+}
+
+.box-4 {
+  position: relative;
+}
+
+.box-4::after {
+  position: absolute;
+  width: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background-color: orangered;
+  transition: all 0.5s linear;
+}
+.box-4:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.box-5 {
+  position: relative;
+}
+
+.box-5::after {
+  position: absolute;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  background-color: orangered;
+  transition: all 0.5s linear;
+}
+.box-5:hover::after {
+  top: 0;
+  height: 100%;
+} */
+/* =========== */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2rem;
+  background-color: black;
+}
+
+.snipper {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(20, 50, 219) 90%
+  );
+  height: 100px;
+  width: 100px;
+  padding: 50px;
+  border-top: 3px solid rgb(26, 26, 186);
+  border-radius: 50%;
+  animation: snipper 3s linear infinite;
+  box-shadow: 0 0 10px 2px blue;
+  position: relative;
+}
+
+.snipper::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 111, 0, 1) 90%
+  );
+  top: -60px;
+  border-radius: 50%;
+  box-shadow: 0 0 12px 0;
+  animation: snipper 1s linear infinite;
+}
+
+@keyframes snipper {
+  from {
+    rotate: 0;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+/* @keyframes before {
+  from {
+  }
+  to {
+    top: 0px;
+  }
+} */
